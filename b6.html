@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n,a0,a1,an;
+        n =+prompt("nhap vao so nguyen duong");
+        if(n>0){
+            a0=0;
+            a1=1;
+            an=1;
+            for(let i =2;1<=n;i++){
+                an = a0 +a1;
+                a0 =a1;
+                a1=an;
+            }
+            console.log("số fibonacci thứ"+n+"là"+an);
+        }else{
+            console.log("ko hop le");
+        }
+    </script>
+</body>
+</html>

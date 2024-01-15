@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = parseInt(prompt("Nhập vào một số nguyên dương n:"));
+        let result = 1;
+
+        if (isNaN(n) || n <= 0) {
+        console.log("Vui lòng nhập một số nguyên dương hợp lệ.");
+        } else {
+            for (let i = 2; i <= n; i++) {
+            result += 1 / Math.pow(i, 3);
+        }
+
+    console.log(`Kết quả của biểu thức  là: ${result}`);
+}
+
+    </script>
+</body>
+</html>
